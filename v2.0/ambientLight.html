@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>About</title>
+  <link type="text/css" rel="stylesheet" href="index.css"/>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oxygen|Roboto+Mono">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+<nav class="navbar navbar-fixed-top ">
+  <div class="container-fluid nav-black">
+    <div class="navbar-header nav-head">
+      <a class="navbar-brand" href="index.html">BuildIT</a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav navbar-right nav-block nav-black">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="sponsor.html">Sponsor</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid text-center contain">
+  <h1 class="col-sm-12 bg-soon">Coming Soon</h1>
+</div>
+
+
+<footer class="container-fluid text-center foot">
+			<a href="#myPage" title="To Top"></a>
+			<div class="row">
+				<div class="col-sm-4 ">
+					<p>Headquarters <i class="fa fa-map-marker mini-icon fa-lg" aria-hidden="true"></i></p>
+          <p>West Lafayette, IN</p>
+				</div>
+        <div class="col-sm-4">
+					<p>Contact <i class="fa fa-envelope mini-icon fa-lg" aria-hidden="true"></i></p>
+          </p>builditsociety@gmail.com</p>
+				</div>
+        <div class="col-sm-4">
+					<p>Github <i class="fa fa-github mini-icon fa-lg" aria-hidden="true"></i></p>
+          <p> https://github.com/BuildIT-Society </p>
+				</div>
+			</div>
+</footer>
+
+<script>
+// slides text up upon page loading
+$(window).scroll(function() {
+  $(".slideanim").each(function(){
+    var pos = $(this).offset().top;
+    var winTop = $(window).scrollTop();
+    if (pos < winTop + 600) {
+      $(this).addClass("slide");
+    }
+  });
+});
+
+// fades in header text when page loads
+$(document).ready(function() {
+        $(".txt-head").fadeIn(2000);
+        $(".txt-head-sub").fadeIn(2000);
+});
+
+// fades in and fades out navbar if scollTop passes 50px
+$(window).scroll(
+    {
+        previousTop: 0
+    },
+    function () {
+    var currentTop = $(window).scrollTop();
+    /*if (currentTop < this.previousTop && $(this).scrollTop() < 100) */
+    if (currentTop < 50) {
+        $(".navbar").fadeIn(300);
+    } else {
+        $(".navbar").fadeOut(300);
+    }
+    this.previousTop = currentTop;
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Projects</title>
+  <link type="text/css" rel="stylesheet" href="index.css"/>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oxygen|Roboto+Mono">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+<nav class="navbar navbar-fixed-top ">
+  <div class="container-fluid nav-black">
+    <div class="navbar-header nav-head">
+      <a class="navbar-brand" href="index.html">BuildIT</a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav navbar-right nav-block nav-black">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="sponsor.html">Sponsor</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid text-center contain">
+  <h1 class="col-sm-12 txt-top">Projects</h1>
+</div>
+
+<div class="container-fluid text-center contain">
+  <div class="row">
+    <div class="col-sm-8 col-sm-offset-2 border">
+    <div class="col-sm-3 col-sm-offset-2">
+      <img src="grn_light.jpg" class="img-responsive center-block img-rounded image" alt="Green Lighting"  width="250" height="250">
+    </div>
+    <div class="col-sm-5">
+      <h2 class="txt-title"><a href="ambientLight.html">Ambient Lighting System</a></h2>
+      <h3 class="txt-para">Spring 2017</h3>
+    </div>
+  </div>
+  </div>
+</div>
+
+
+<div class="container-fluid text-center contain">
+  <div class="row">
+    <div class="col-sm-8 col-sm-offset-2 border">
+    <div class="col-sm-3 col-sm-offset-2">
+      <img src="homepage_v1.png" class="img-responsive center-block img-rounded image" alt="Homepage v1.0"  width="350" height="350">
+    </div>
+    <div class="col-sm-5">
+      <h2 class="txt-title"><a href="oldSite.html">Club Website</a></h2>
+      <h3 class="txt-para">Fall 2016 - Present</h3>
+    </div>
+  </div>
+  </div>
+</div>
+
+<div class="container-fluid contain text-center" id="projects-txt">
+  <div class="row">
+    <div class="col-sm-8 col-sm-offset-2 text-left">
+      <h2 class="txt-title">Building the Future</h2>
+      <p class="txt-para slideanim">Project work is the base foundation of our club.  It is what brings us together as a society of creators.
+      We have structured the club so that each semester we will work on a least one project and try to complete it by the end of the semester.
+      At the end of each semester, Purdue hosts a engineering challenge called the Spark Challenge, where students from many different engineering
+      displines build projects using micro-processors or micro controllers. In the past, we have made projects that can compete in the Spark Challenge,
+      but we are not limited to projects of this catagory alone.  If you are interested in the Spark Challenge, you can learn more <a class="linker" href="https://engineering.purdue.edu/ECESS/spark/">here</a>.
+      <br>
+      All project files and code can be found at our GitHub <a class="linker" href="https://github.com/BuildIT-Society">here</a>.</p>
+    </div>
+  </div>
+</div>
+
+
+<footer class="container-fluid text-center foot">
+			<a href="#myPage" title="To Top"></a>
+			<div class="row">
+				<div class="col-sm-4 ">
+					<p>Headquarters <i class="fa fa-map-marker mini-icon fa-lg" aria-hidden="true"></i></p>
+          <p>West Lafayette, IN</p>
+				</div>
+        <div class="col-sm-4">
+					<p>Contact <i class="fa fa-envelope mini-icon fa-lg" aria-hidden="true"></i></p>
+          </p>builditsociety@gmail.com</p>
+				</div>
+        <div class="col-sm-4">
+					<p>Github <i class="fa fa-github mini-icon fa-lg" aria-hidden="true"></i></p>
+          <p> https://github.com/BuildIT-Society </p>
+				</div>
+			</div>
+</footer>
+
+<script>
+// slides text up upon page loading
+$(window).scroll(function() {
+  $(".slideanim").each(function(){
+    var pos = $(this).offset().top;
+    var winTop = $(window).scrollTop();
+    if (pos < winTop + 600) {
+      $(this).addClass("slide");
+    }
+  });
+});
+
+
+// fades in and fades out navbar if scollTop passes 50px
+$(window).scroll(
+    {
+        previousTop: 0
+    },
+    function () {
+    var currentTop = $(window).scrollTop();
+    /*if (currentTop < this.previousTop && $(this).scrollTop() < 100) */
+    if (currentTop < 50) {
+        $(".navbar").fadeIn(300);
+    } else {
+        $(".navbar").fadeOut(300);
+    }
+    this.previousTop = currentTop;
+});
+</script>
+
+</body>
+</html>

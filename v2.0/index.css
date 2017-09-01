@@ -1,0 +1,226 @@
+.contain {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.rows {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.navbar {
+  font-size: 12px !important;
+  letter-spacing: 1px;
+  background: transparent;
+  border-color: transparent;
+}
+.nav-head {
+  padding-left: 50px;
+  font-size: 24px;
+  font-family: 'Oxygen', sans-serif;
+  font-weight: 300px;
+}
+.nav-block {
+  padding-right: 100px;
+  font-size: 20px;
+  font-family: 'Oxygen', sans-serif;
+  font-weight: 300px;
+}
+.navbar li a, .navbar .navbar-brand {
+  color: #ffffff !important;
+  background-color: transparent !important;
+  text-decoration: none;
+  border-bottom: transparent solid 2px;
+  padding-bottom: 5px !important;
+}
+.navbar-nav li a:hover {
+  background-color: transparent !important;
+  text-decoration: none;
+  border-bottom: #bf9740 solid 2px;
+}
+.navbar-nav li.active a {
+  background-color: transparent !important;
+}
+
+.nav-black {
+  background-color: #292929;
+}
+
+.bg-soon {
+  font-family: "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 200;
+  font-size: 60px;
+  background-color: #ffffff;
+  color: #161616;
+  padding-top: 200px;
+  padding-bottom: 400px;
+}
+.bg-top {
+  background-image: url("desk(4).jpg");
+  background-size: cover;
+  color: #fafafa;
+}
+
+.bg-build {
+  background-color: #ffffff;
+  color: #161616;
+}
+
+.bg-ignite {
+  background-color: #fafafa;
+  color: #212121;
+}
+
+.bg-trans {
+  background-color: #f5f5f5;
+  color: #333333;
+}
+
+.bg-more {
+  background-color: #161616;
+  color: #ffffff;
+  padding-top: 180px;
+  padding-bottom: 180px;
+}
+.bg-more a {
+  background-color: transparent;
+  color: #ffffff;
+  text-decoration: none;
+  border-bottom: transparent solid 2px;
+  padding-bottom: 5px !important;
+}
+.bg-more a:hover, .bg-more a:visited{
+  background-color: transparent;
+  color: #ffffff;
+  text-decoration: none;
+  border-bottom: #bf9740 solid 2px;
+}
+
+.txt-head {
+  padding-top: 0px;
+  padding-bottom: 30px;
+  font-size: 64px;
+  font-family: "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+  display: none;
+}
+
+.txt-head-sub{
+  padding-top: 30px;
+  padding-bottom: 20px;
+  font-size: 36px;
+  font-family: "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+  display: none;
+}
+
+.txt-top {
+  font-family: "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 200;
+  font-size: 60px;
+  color: #161616;
+}
+
+.txt-title {
+  font-family: "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;
+  padding-top: 0px; /* used to center text blocks */
+  padding-bottom: 20px;
+  font-size: 40px;
+  font-weight: 300;
+}
+
+.txt-para {
+  font-size: 20px;
+  font-weight: 100;
+  font-family: 'Roboto Mono', monospace;
+  line-height: 150%;
+}
+
+.txt-block {
+  margin: auto;
+}
+
+.txt-sub {
+  font-family: 'Oxygen', sans-serif;
+  font-weight: bold;
+}
+
+.txt-sub-sub {
+  font-size: 18px;
+  font-family: 'Oxygen', sans-serif;
+}
+
+
+.linker {
+  background-color: transparent;
+  color: #000000;
+  font-weight: bold;
+  font-size: 22px;
+  padding-bottom: 5px !important;
+}
+
+.border {
+  border-color: black;
+  border-radius: 1px;
+  border-style: solid;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.image {
+  margin-left: 0px;
+}
+
+.icon {
+  font-size: 50px;
+  color: #bf9740;
+}
+
+.mini-icon {
+  color: #bf9740;
+}
+
+.foot {
+	background-color: #292929;
+	color: #ffffff;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+
+.slideanim {
+  visibility: hidden;
+}
+.slide {
+    /* The name of the animation */
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    /* The duration of the animation */
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    /* Make the element visible */
+    visibility: visible;
+}
+/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(25%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(25%);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
