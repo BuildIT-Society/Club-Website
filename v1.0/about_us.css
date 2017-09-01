@@ -1,0 +1,136 @@
+body {
+	background-color: white;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+}
+
+#main_wrapper {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+	position: relative;
+	height: 100%;
+}
+
+#header {
+	position: relative;
+	top: 0px;
+	height: 90px;
+	background-color: #323333;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#navbar {
+	position: relative;
+	margin-top: 10px;
+	margin-left: -10px;
+}
+
+#navbar ul {
+	list-style-type: none;
+	margin: -10px;
+}
+
+#navbar ul li {
+	display: inline;
+	padding-left: 5px;
+}
+
+#navbar ul li a {
+	border: 1px solid #cbbeb5; /* tan */
+	font-family: Myriad, Lucida Grande, sans-serif;
+	color: white; /* tan */
+	background-color: black;
+	border-radius: 5px 5px;
+	padding: 5px;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+#navbar ul li a:hover {
+	text-decoration: none;
+	transition-duration: .4s;
+	background-color: white;
+	color: black;
+	border: 1px solid #cbbeb5;
+}
+
+#navbar ul li a:active {
+	text-decoration: none;
+	top: 2px;
+	color: #cbbeb5; /* tan */
+}
+
+p {
+	font-size: 1.5rem;
+	position: relative;
+  margin-left: 10%;
+  font-family: Myriad, Lucida Grande, Arial, sans-serif;
+  font-weight: 100;
+  text-align: left;
+}
+
+
+h1 {
+	font-size: 3rem;
+	position: relative;
+  margin-top: 10%;
+  font-family: Myriad, Lucida Grande, Arial, sans-serif;
+  font-weight: 100;
+  text-align: center;
+}
+
+h3 {
+	color: grey;
+	font-size: 2rem;
+	position: relative;
+	font-family: Myriad, Lucida Grande, Arial, sans-serif;
+	font-weight: 100;
+	text-align: center;
+}
+
+.button {
+	color: white;
+	font-family: Myriad;
+	font-size: 28px;
+	font-weight: heavy;
+	text-decoration: none;
+	padding: 6px;
+	text-align: center;
+}
+
+a.button:hover {
+	transition-duration: .4s;
+	background-color: white;
+	color: grey;
+}
+
+#footer {
+	position: relative;
+	bottom: -60px;
+	height: 70px;
+	background-color: #323333;
+  width: 100%;
+  margin-top: 20px ;
+  padding: ;
+}
+
+h4 {
+	text-align: center;
+	color: white;
+	padding-top: 15px;
+}
+
+.project {
+	margin: 15px;
+	margin-left: 50px;
+	padding: 10px;
+}
+
+.img_globe {
+	margin: 0 auto;
+	display: block;
+}

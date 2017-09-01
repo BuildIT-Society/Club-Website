@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="about_us.css"/>
+		<title>Home</title>
+	</head>
+	<body>
+	<div id="main_wrapper">
+		<div id="header">
+			<div id="navbar">
+				<ul>
+					<li><a href = "index.html">Home</a></li>
+          <li><a href = "projects.html">Projects</a></li>
+					<li><a href = "resources.html">Club Resources</a></li>
+					<li><a href = "about_us.html">About Us</a></li>
+				</ul>
+			</div>
+		</div>
+		<h1>Our Projects</h1>
+		<h3><strong>Capital One Globe Challenge</strong></h3>
+		<h3>By Sam Bartek</h3>
+		<div class="project">
+			<p class="heading"><strong>What the Globe Data Represents</strong></p>
+			<p>The globe is a data visualization of temperature data
+				<br> from all the major cities around the world.
+				<br> On the globe, the shorter and more blue bars represent cold temperatures,
+				<br> while the taller and more red bars represent hotter temperatures.
+				<br> I used data that I collected through the OpenWeatherMap API
+				<br> on 10/29/2016 to be displayed on the globe as seen below.
+			</p>
+			<img class="img_globe" src="globe_pic.png" alt="HTML5 Icon" width="480" height="360">
+			<p><a href = "globe.html">View the Globe Here</a></p>
+			<p class="heading"><strong>How It Was Created</strong></p>
+			<p>The Capital One Globe Challenge was a challenge
+				<br> given to students to create a data visualization
+				<br> using Google Chrome's WebGL Globe program.
+				<br> For my globe, I used OpenWeatherMap's API to get
+				<br> the latitude and longitude coordinates of
+				<br> all the major cities in the world.
+				<br> Then I retrieved the temperature data of those cities
+				<br> using a python script.  I then converted the
+				<br> data from the python format back to JSON
+				<br> since the WebGL Globe requires JSON
+				<br> data to be in a unique form. After that I
+				<br> sent the data to the WebGL Globe code,
+				<br> which in turn displayed the geolocation data on the 3-D globe.
+			</p>
+		</div>
+		<div id="footer">
+    	<h4>
+      	&copy;2016 Sam Bartek & Diego Martinez
+    	</h4>
+  	</div>
+	</div>
+	</body>
+</html>
