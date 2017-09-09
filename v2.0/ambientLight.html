@@ -13,26 +13,111 @@
 </head>
 
 <body>
-<nav class="navbar navbar-fixed-top ">
-  <div class="container-fluid nav-black">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header nav-head">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
       <a class="navbar-brand" href="index.html">BuildIT</a>
     </div>
-    <div class="collapse navbar-collapse">
-      <ul class="nav navbar-nav navbar-right nav-block nav-black">
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right nav-block">
         <li><a href="index.html">Home</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="sponsor.html">Sponsor</a></li>
       </ul>
-    </div>
-  </div>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
 </nav>
 
-<div class="container-fluid text-center contain">
-  <h1 class="col-sm-12 bg-soon">Coming Soon</h1>
+<div class="container-fluid contain text-center bg-light-pink">
+  <h1 class="txt-head">Ambient Lighting System</h1>
+  <h2 class="txt-head-sub">A multi-facet lighting system for college students.</h2>
 </div>
 
+<div class="container-fluid contain text-center bg-light-demo">
+  <div class="row">
+    <div class="col-sm-10 col-sm-offset-1">
+      <h1 class="txt-head">System Demo</h1>
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/LZRz-wJTSj8?rel=0" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid contain text-center bg-light-black">
+  <h1 class="txt-title">How It Was Built</h1>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <i class="fa fa-code fa-4x icon" aria-hidden="true"></i>
+      <h4 class="txt-sub">Software</h4>
+      <p class="txt-sub-sub">Built in C</p>
+    </div>
+    <div class="col-sm-4">
+      <i class="fa fa-cogs fa-4x icon" aria-hidden="true"></i>
+      <h4 class="txt-sub">Hardware</h4>
+      <p class="txt-sub-sub">Arduino Microcontroller <br> RGB Strip <br> Microphone</p>
+    </div>
+    <div class="col-sm-4">
+      <i class="fa fa-clock-o fa-4x icon" aria-hidden="true"></i>
+      <h4 class="txt-sub">Secret Sauce</h4>
+      <p class="txt-sub-sub">Many hours of love</p>
+    </div>
+    </div>
+</div>
+
+<div class="container-fluid contain text-center bg-build" id="microcontroller">
+  <div class="row rows">
+    <div class="col-sm-6">
+      <img src="Pic/arduino.jpg" class="img-responsive center-block img-rounded image" alt="Arduino"  width="600" height="600">
+    </div>
+    <div class="col-sm-6 text-left">
+      <h2 class="txt-title">Arduino Microcontroller</h2>
+      <p class="txt-para slideanim">BuildIT Society was created to connect students with similar interests in building exciting fun tech.
+        Our club culture is one of inclusion and collabortion.  We believe the best learning and innovation happens when students work together in tightly-knit groups.
+        At our core, we are groups of individuals that work together to solve and create projects we find interesting.</p>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid contain text-center bg-build" id="rgb">
+  <div class="row rows">
+    <div class="col-sm-6 text-left">
+      <h2 class="txt-title">RGB Light Strip</h2>
+      <p class="txt-para slideanim">At BuildIT Society, we give students an expressive outlet to their ideas and creations that might otherwise go unnoticed.
+        The type of individuals that are involved in the club are enthusiastic about creating new tech and willing to learn new skills.
+        Although students may get project experience in class, our club lets them take their ideas and pursue them over a whole semester without the extra overhead that typically comes with class projects.</p>
+    </div>
+    <div class="col-sm-6">
+      <img src="Pic/rgb.jpg" class="img-responsive center-block img-rounded image" alt="RGB"  width="600" height="600">
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid contain text-center bg-build" id="colorWheel">
+  <div class="row rows">
+    <div class="col-sm-6">
+      <img src="Pic/colorWheel.png" class="img-responsive center-block img-rounded image" alt="Color Wheel"  width="600" height="600">
+    </div>
+    <div class="col-sm-6 text-left">
+      <h2 class="txt-title">Coloring Choosing Mode</h2>
+      <p class="txt-para slideanim">BuildIT Society was created to connect students with similar interests in building exciting fun tech.
+        Our club culture is one of inclusion and collabortion.  We believe the best learning and innovation happens when students work together in tightly-knit groups.
+        At our core, we are groups of individuals that work together to solve and create projects we find interesting.</p>
+    </div>
+  </div>
+</div>
 
 <footer class="container-fluid text-center foot">
 			<a href="#myPage" title="To Top"></a>
@@ -66,8 +151,8 @@ $(window).scroll(function() {
 
 // fades in header text when page loads
 $(document).ready(function() {
-        $(".txt-head").fadeIn(2000);
-        $(".txt-head-sub").fadeIn(2000);
+        $(".txt-head").fadeIn(1000);
+        $(".txt-head-sub").fadeIn(1000);
 });
 
 // fades in and fades out navbar if scollTop passes 50px

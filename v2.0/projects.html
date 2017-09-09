@@ -13,54 +13,34 @@
 </head>
 
 <body>
-<nav class="navbar navbar-fixed-top ">
-  <div class="container-fluid nav-black">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header nav-head">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
       <a class="navbar-brand" href="index.html">BuildIT</a>
     </div>
-    <div class="collapse navbar-collapse">
-      <ul class="nav navbar-nav navbar-right nav-block nav-black">
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right nav-block">
         <li><a href="index.html">Home</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="sponsor.html">Sponsor</a></li>
       </ul>
-    </div>
-  </div>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
 </nav>
 
-
-<div class="container-fluid text-center contain">
-  <h1 class="col-sm-12 txt-top">Projects</h1>
-</div>
-
-<div class="container-fluid text-center contain">
-  <div class="row">
-    <div class="col-sm-8 col-sm-offset-2 border">
-    <div class="col-sm-3 col-sm-offset-2">
-      <img src="grn_light.jpg" class="img-responsive center-block img-rounded image" alt="Green Lighting"  width="250" height="250">
-    </div>
-    <div class="col-sm-5">
-      <h2 class="txt-title"><a href="ambientLight.html">Ambient Lighting System</a></h2>
-      <h3 class="txt-para">Spring 2017</h3>
-    </div>
-  </div>
-  </div>
-</div>
-
-
-<div class="container-fluid text-center contain">
-  <div class="row">
-    <div class="col-sm-8 col-sm-offset-2 border">
-    <div class="col-sm-3 col-sm-offset-2">
-      <img src="homepage_v1.png" class="img-responsive center-block img-rounded image" alt="Homepage v1.0"  width="350" height="350">
-    </div>
-    <div class="col-sm-5">
-      <h2 class="txt-title"><a href="oldSite.html">Club Website</a></h2>
-      <h3 class="txt-para">Fall 2016 - Present</h3>
-    </div>
-  </div>
-  </div>
+<div class="container-fluid contain text-center bg-project">
+  <h1 class="txt-head">Club Projects</h1>
+  <h2 class="txt-head-sub"> Theory made into practice.</h2>
 </div>
 
 <div class="container-fluid contain text-center" id="projects-txt">
@@ -77,6 +57,46 @@
     </div>
   </div>
 </div>
+
+<div class="container-fluid text-center contain bg-project-light">
+  <h1 class="txt-head">Ambient Lighting System</h1>
+  <h2 class="txt-head-sub">Spring 2017</h2>
+  <a class="links" href="ambientLight.html"><button class="btn">Learn More</button></a>
+</div>
+
+<!---  Just filler text -->
+<div class="container-fluid contain text-center" id="projects-txt">
+  <div class="row">
+    <div class="col-sm-8 col-sm-offset-2 text-left">
+      <h2 class="txt-title">Building the Future</h2>
+      <p class="txt-para slideanim">Project work is the base foundation of our club.  It is what brings us together as a society of creators.
+      We have structured the club so that each semester we will work on a least one project and try to complete it by the end of the semester.
+      <a class="linker" href="https://engineering.purdue.edu/ECESS/spark/">here</a>.
+      <br>
+      All project files and code can be found at our GitHub <a class="linker" href="https://github.com/BuildIT-Society">here</a>.</p>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid text-center contain bg-project-site">
+  <h1 class="txt-head">Club Website</h1>
+  <h2 class="txt-head-sub">Fall 2016 - Present</h2>
+  <a class="links" href="oldSite.html"><button class="btn">Learn More</button></a>
+</div>
+
+<div class="container-fluid contain text-center" id="projects-txt">
+  <div class="row">
+    <div class="col-sm-8 col-sm-offset-2 text-left">
+      <h2 class="txt-title">Building the Future</h2>
+      <p class="txt-para slideanim">Project work is the base foundation of our club.  It is what brings us together as a society of creators.
+      We have structured the club so that each semester we will work on a least one project and try to complete it by the end of the semester.
+      <a class="linker" href="https://engineering.purdue.edu/ECESS/spark/">here</a>.
+      <br>
+      All project files and code can be found at our GitHub <a class="linker" href="https://github.com/BuildIT-Society">here</a>.</p>
+    </div>
+  </div>
+</div>
+
 
 
 <footer class="container-fluid text-center foot">
@@ -109,6 +129,11 @@ $(window).scroll(function() {
   });
 });
 
+// fades in header text when page loads
+$(document).ready(function() {
+        $(".txt-head").fadeIn(1000);
+        $(".txt-head-sub").fadeIn(1000);
+});
 
 // fades in and fades out navbar if scollTop passes 50px
 $(window).scroll(
@@ -126,6 +151,7 @@ $(window).scroll(
     this.previousTop = currentTop;
 });
 </script>
+
 
 </body>
 </html>

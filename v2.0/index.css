@@ -13,20 +13,8 @@
 .navbar {
   font-size: 12px !important;
   letter-spacing: 1px;
-  background: transparent;
-  border-color: transparent;
-}
-.nav-head {
-  padding-left: 50px;
-  font-size: 24px;
-  font-family: 'Oxygen', sans-serif;
-  font-weight: 300px;
-}
-.nav-block {
-  padding-right: 100px;
-  font-size: 20px;
-  font-family: 'Oxygen', sans-serif;
-  font-weight: 300px;
+  background: transparent !important;
+  border-color: transparent !important;
 }
 .navbar li a, .navbar .navbar-brand {
   color: #ffffff !important;
@@ -44,8 +32,23 @@
   background-color: transparent !important;
 }
 
+.nav-head {
+  padding-left: 50px;
+  font-size: 24px;
+  font-family: 'Oxygen', sans-serif;
+  font-weight: 300px;
+}
+.nav-block {
+  padding-right: 100px;
+  font-size: 20px;
+  font-family: 'Oxygen', sans-serif;
+  font-weight: 300px;
+}
 .nav-black {
   background-color: #292929;
+}
+.nav-drop {
+  background: black;
 }
 
 .bg-soon {
@@ -57,45 +60,84 @@
   padding-top: 200px;
   padding-bottom: 400px;
 }
-.bg-top {
-  background-image: url("desk(4).jpg");
+.bg-home-top {
+  background-image: url("Pic/desk(4).jpg");
   background-size: cover;
   color: #fafafa;
 }
 
-.bg-build {
+.bg-home-build {
   background-color: #ffffff;
   color: #161616;
 }
 
-.bg-ignite {
+.bg-home-ignite {
   background-color: #fafafa;
   color: #212121;
 }
 
-.bg-trans {
+.bg-home-trans {
   background-color: #f5f5f5;
   color: #333333;
 }
 
-.bg-more {
+.bg-home-more {
   background-color: #161616;
   color: #ffffff;
   padding-top: 180px;
   padding-bottom: 180px;
 }
-.bg-more a {
+.bg-home-more a {
   background-color: transparent;
   color: #ffffff;
   text-decoration: none;
   border-bottom: transparent solid 2px;
   padding-bottom: 5px !important;
 }
-.bg-more a:hover, .bg-more a:visited{
+.bg-home-more a:hover, .bg-home-more a:visited{
   background-color: transparent;
   color: #ffffff;
   text-decoration: none;
   border-bottom: #bf9740 solid 2px;
+}
+
+.bg-project {
+  background-image: url("Pic/projects.jpg");
+  background-size: cover;
+  color: #fafafa;
+  padding-bottom: 400px;
+}
+
+.bg-project-light {
+  background-image: url("Pic/blue_light.jpg");
+  background-size: cover;
+  color: #fafafa;
+  padding-bottom: 400px;
+}
+
+.bg-project-site {
+  background-image: url("Pic/code_snip.jpg");
+  background-size: cover;
+  color: #fafafa;
+  padding-bottom: 400px;
+}
+
+.bg-light-pink {
+  background-image: url("Pic/pinkCircuit.jpg");
+  background-size: cover;
+  color: #fafafa;
+  padding-bottom: 400px;
+}
+
+.bg-light-demo {
+  background-color: #ffffff;
+}
+
+.bg-light-black {
+  background-color: #161616;
+  color: #ffffff;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .txt-head {
@@ -152,6 +194,27 @@
   font-family: 'Oxygen', sans-serif;
 }
 
+.btn {
+  font-size: 18px !important;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 300;
+  padding: 10px 20px !important;
+  background-color: transparent;
+  color: #ffffff;
+  border-radius: 0px !important;
+  border: 3px solid #bf9740 !important;
+  transition: .2s;
+}
+.btn:hover, .btn:focus {
+  border: 3px solid #bf9740;
+  background-color: #bf9740;
+  color: #ffffff !important;
+}
+
+.links {
+  text-decoration: none;
+  color: inherit;
+}
 
 .linker {
   background-color: transparent;
@@ -162,7 +225,7 @@
 }
 
 .border {
-  border-color: black;
+  border-color: #bf9740;
   border-radius: 1px;
   border-style: solid;
   border-radius: 5px;
@@ -171,6 +234,12 @@
 
 .image {
   margin-left: 0px;
+}
+
+.img-brd {
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
 }
 
 .icon {

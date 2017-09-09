@@ -13,32 +13,40 @@
 </head>
 
 <body>
-<nav class="navbar navbar-fixed-top ">
+<nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header nav-head">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
       <a class="navbar-brand" href="index.html">BuildIT</a>
     </div>
-    <div class="collapse navbar-collapse">
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right nav-block">
         <li><a href="index.html">Home</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="sponsor.html">Sponsor</a></li>
       </ul>
-    </div>
-  </div>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
 </nav>
 
-<div class="container-fluid contain bg-top text-center">
+<div class="container-fluid contain text-center bg-home-top">
   <h1 class="txt-head">BuildIT Society</h1>
-  <img src="logo.jpg" class="img-responsive img-circle"  style="display:inline" alt="Logo" width="250" height="250">
+  <img src="Pic/logo.jpg" class="img-responsive img-circle"  style="display:inline" alt="Logo" width="250" height="250">
   <h2 class="txt-head-sub">Build. Ignite. Transform.</h2>
 </div>
 
-<div class="container-fluid contain text-center bg-build" id="build">
+<div class="container-fluid contain text-center bg-home-build" id="build">
   <div class="row rows">
     <div class="col-sm-6">
-      <img src="transform(2).jpg" class="img-responsive center-block img-rounded image" alt="Build"  width="600" height="600">
+      <img src="Pic/transform(2).jpg" class="img-responsive center-block img-rounded image" alt="Build"  width="600" height="600">
     </div>
     <div class="col-sm-6 text-left">
       <h2 class="txt-title">Building Communities of Creators</h2>
@@ -49,7 +57,7 @@
   </div>
 </div>
 
-<div class="container-fluid contain text-center bg-ignite" id="ignite">
+<div class="container-fluid contain text-center bg-home-ignite" id="ignite">
   <div class="row rows">
     <div class="col-sm-6 text-left">
       <h2 class="txt-title">Igniting Passion in Students</h2>
@@ -58,15 +66,15 @@
         Although students may get project experience in class, our club lets them take their ideas and pursue them over a whole semester without the extra overhead that typically comes with class projects.</p>
     </div>
     <div class="col-sm-6">
-      <img src="ignite(3).jpg" class="img-responsive center-block img-rounded image" alt="Ignite"  width="600" height="600">
+      <img src="Pic/ignite(3).jpg" class="img-responsive center-block img-rounded image" alt="Ignite"  width="600" height="600">
     </div>
   </div>
 </div>
 
-<div class="container-fluid contain text-center bg-trans" id="transform">
+<div class="container-fluid contain text-center bg-home-trans" id="transform">
   <div class="row rows ">
     <div class="col-sm-6">
-      <img src="build(2).jpg" class="img-responsive center-block img-rounded image" alt="Transform"  width="600" height="600">
+      <img src="Pic/build(2).jpg" class="img-responsive center-block img-rounded image" alt="Transform"  width="600" height="600">
     </div>
     <div class="col-sm-6 text-left">
       <h2 class="txt-title">Transforming Individuals</h2>
@@ -77,7 +85,7 @@
   </div>
 </div>
 
-<div class="container-fluid contain text-center bg-more">
+<div class="container-fluid contain text-center bg-home-more">
   <h2>What We Do</h2>
   <br> <br>
   <div class="row slideanim">
@@ -132,8 +140,8 @@ $(window).scroll(function() {
 
 // fades in homescreen header text when page loads
 $(document).ready(function() {
-        $(".txt-head").fadeIn(2000);
-        $(".txt-head-sub").fadeIn(2000);
+        $(".txt-head").fadeIn(1000);
+        $(".txt-head-sub").fadeIn(1000);
 });
 
 // fades in and fades out navbar if scollTop passes 50px
@@ -154,7 +162,7 @@ $(window).scroll(
 
 // Add smooth scrolling to all links by having href="#name" and location id="name"
 $(document).ready(function(){
-  $(".bg-more a").on('click', function(event) {
+  $(".bg-home-more a").on('click', function(event) {
   // Make sure this.hash has a value before overriding default behavior
   if (this.hash !== "") {
     // Prevent default anchor click behavior
