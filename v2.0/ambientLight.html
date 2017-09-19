@@ -82,9 +82,10 @@
     </div>
     <div class="col-sm-6 text-left">
       <h2 class="txt-title">Arduino Microcontroller</h2>
-      <p class="txt-para slideanim">BuildIT Society was created to connect students with similar interests in building exciting fun tech.
-        Our club culture is one of inclusion and collabortion.  We believe the best learning and innovation happens when students work together in tightly-knit groups.
-        At our core, we are groups of individuals that work together to solve and create projects we find interesting.</p>
+      <p class="txt-para slideanim">For this project, we decided to use an Arduino Uno 3 to run our
+      program on. Arduino's are great for creators looking to rapidly prototype new technologies
+      and iterate project updates on. As a mircrocontroller, Arduino's simply run code through a loop
+      as long as they retain power, so this was a perfect fit for our ambient lighting system.</p>
     </div>
   </div>
 </div>
@@ -95,9 +96,22 @@
   <div class="row rows">
     <div class="col-sm-6 text-left">
       <h2 class="txt-title">RGB Light Strip</h2>
-      <p class="txt-para slideanim">At BuildIT Society, we give students an expressive outlet to their ideas and creations that might otherwise go unnoticed.
-        The type of individuals that are involved in the club are enthusiastic about creating new tech and willing to learn new skills.
-        Although students may get project experience in class, our club lets them take their ideas and pursue them over a whole semester without the extra overhead that typically comes with class projects.</p>
+      <p class="txt-para slideanim">The main component of our project was the LED RGB light strip. The RGB strip
+      allowed use to program the light color using values from 0-255 for red, green, and blue. Using this
+      capability, we designed the system to have 4 main modes: average color pixel from laptop, changing color with music,
+      joystick color picker, and rainbow mode.
+      <br>
+      The average color pixel mode used a 3rd party software called ScreenShoter to collect
+      the current average pixel color of the user's screen. Once we had the color, we then displayed it on the light strip.
+      <br>
+      The changing lights from music was created by randomly cycling through colors and changing colors on the beat of <thead>
+      music. We used a microphone to collect audio samples and then created a queue that stored audio snippet amplitudes in order
+      to find the average amplitude of the song. Once we had the average amplitude, we changed the LED color if the dequeued sound
+      snippet was greater than the average.
+      <br>
+      The rainbow mode used a circular linked-list to scroll through a cascade of colors to be displayed on the lightstrip. The modes
+      continued until a button was pressed on the lighting system at which point it changed to the next light mode.
+       </thead>  </p>
     </div>
     <div class="col-sm-6">
       <img src="Pic/rgb.jpg" class="img-responsive center-block img-rounded image" alt="RGB"  width="600" height="600">
@@ -112,9 +126,8 @@
     </div>
     <div class="col-sm-6 text-left">
       <h2 class="txt-title">Coloring Choosing Mode</h2>
-      <p class="txt-para slideanim">BuildIT Society was created to connect students with similar interests in building exciting fun tech.
-        Our club culture is one of inclusion and collabortion.  We believe the best learning and innovation happens when students work together in tightly-knit groups.
-        At our core, we are groups of individuals that work together to solve and create projects we find interesting.</p>
+      <p class="txt-para slideanim">The joystick color picker mode offered us a unique problem. The joystick gave us a X and Y cartesian point
+      and we need to dynamically change the light color given the position of the joystick.   </p>
     </div>
   </div>
 </div>
